@@ -16,7 +16,7 @@ const AccountLayout = () => {
         <Header />
     
             { Auth?._id ? (
-                <main className="bg-neutral-100 lg:h-screen">
+                <main className="bg-neutral-100 h-full ">
                     
 
 
@@ -25,7 +25,7 @@ const AccountLayout = () => {
             </main>
             ): <Navigate to="/" /> }
 
-        <div className="bg-neutral-100 pt-5 lg:pt-0">
+        <div className="pt-5 lg:pt-0 bg-neutral-100 h-full pb-20">
 
             <Footer />
         </div>

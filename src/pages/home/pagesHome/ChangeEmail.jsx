@@ -44,11 +44,11 @@ const ChangeEmail = () => {
 
   return (
     <div>
-      <div className="w-1/3 mx-auto">
-          <h1 className="pt-36 font-bold text-3xl text-white">Cambiar Email</h1>
+      <div className="lg:w-1/3 mx-auto">
+          <h1 className="pb-5 pt-36 font-bold text-3xl text-white">Cambiar Email</h1>
 
           
-          <div className="mt-10 pb-16">
+          <div className="mt-10 md:pb-16">
             <Formik
             initialValues={{
                 email: '',

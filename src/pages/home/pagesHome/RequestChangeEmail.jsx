@@ -5,9 +5,12 @@ import Button from '../../../components/button/Button'
 import useAuth from '../../../hooks/useAuth'
 import AlertLogin from '../../../components/Alerts/AlertLogin'
 import Alert from '../../../components/Alerts/Alert'
+import { useEffect } from 'react'
 
 const RequestChangeEmail = () => {
     const [alert, setAlert] = useState({})
+
+
 
     const {RequestChangeEmail} = useAuth()
 

@@ -15,7 +15,7 @@ const RegisterLoyout = () => {
     
         
             </main>
-            <div className='mt-20'>
+            <div className='lg:mt-20'>
 
               <Footer/>
             </div>

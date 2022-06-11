@@ -75,8 +75,8 @@ const AddProfile = () => {
       <Header />
 
     <div className="lg:w-1/2 p-5 mx-auto mt-5">
-        <div className="grid gap-5 mb-6">
-          <h1 className="text-white md:text-7xl font-semibold">Agregar perfil</h1>
+        <div className="grid gap-5 mb-6 text-center md:text-left">
+          <h1 className="text-white text-3xl  md:text-7xl font-semibold">Agregar perfil</h1>
           <p className="text-gray-300 text-xl">Agrega un perfil para otra persona que vea Netflix.</p>
         </div>
 
@@ -117,7 +117,7 @@ const AddProfile = () => {
         
         >
             {({values,errors, touched, handleChange, handleBlur, handleSubmit, setFieldValue}) => (
-              <form action="" className="mt-10 pb-24" onSubmit={handleSubmit}>
+              <form action="" className="mt-10 lg:pb-24" onSubmit={handleSubmit}>
                 <div className="flex flex-col lg:flex-row items-center gap-4 text-white mb-14">
 
                   <div className="relative">
@@ -173,11 +173,11 @@ const AddProfile = () => {
                       {alert.msg && <AlertLogin error={alert.error} text={alert.msg}/>}
                     </div>
 
-                <div className="flex justify-center gap-5 mt-10 p-2 bg-gray-200 relative">
+                <div className="flex justify-center gap-5 mt-10 relative">
                   
                    <button 
                     type = 'submit' 
-                    className="'w-full text-2xl font-bold p-2 text-black'"
+                    className="w-full text-2xl font-bold p-4 text-black bg-gray-200"
 
                     > { !loading ? 'Continuar' : <div className="p-4"> <Spinner/></div>} 
                     

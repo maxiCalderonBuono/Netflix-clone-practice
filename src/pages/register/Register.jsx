@@ -26,8 +26,8 @@ const Register = () => {
         <div className=" text-white">
 
 
-            <div className="text-center flex flex-col md:w-2/3 gap-4 mx-auto pt-40">
-                <h2 className="text-7xl font-bold">Películas y series ilimitadas y mucho más.</h2>
+            <div className="text-center flex flex-col md:w-2/3 gap-4 mx-auto pt-20 md:pt-40">
+                <h2 className="text-5xl lg:text-7xl font-bold">Películas y series ilimitadas y mucho más.</h2>
                 <p className="text-2xl font-semibold"> Disfruta donde quieras. Cancela cuando quieras.</p>
                 <p className="text-xl"> ¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
             </div>
@@ -74,8 +74,8 @@ const Register = () => {
             >
                 {({handleSubmit, values, errors, handleChange, handleBlur, touched}) => (
 
-                    <div className="mt-14 md:w-1/2 w-full mx-auto">
-                        <form action="" onSubmit={handleSubmit} className="flex justify-center gap-1">
+                    <div className="mt-14 lg:w-1/2 w-full mx-auto">
+                        <form action="" onSubmit={handleSubmit} className="flex flex-col lg:flex-row justify-center gap-1 mb-10 lg:mb-0">
 
                             <div className="w-full flex flex-col gap-16">
 
@@ -102,11 +102,11 @@ const Register = () => {
                             </div>
 
             
-                            <div className="md:w-1/3 mt-1">
+                            <div className="lg:w-1/3 w-2/3 mx-auto mt-1">
                                 <Button 
                                 type = 'submit' 
                                 texto={'Comenzar'}
-                                clases={'w-full p-6 uppercase rounded-none text-xl'}
+                                clases={'w-full p-4 md:p-6 uppercase rounded-none text-xl'}
                                 />
                             </div>
                         </form>

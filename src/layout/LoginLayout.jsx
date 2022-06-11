@@ -5,11 +5,11 @@ import Footer from '../components/FootersAndHeader/Footer'
 const AuthLayout = () => {
   return (
     <> 
-    <div className='bg-black p-5 md:p-0 imagen_fondo_inicio overflow-y-hidden'>
+    <div className='bg-black imagen_fondo_inicio overflow-y-hidden'>
       <div className="imagen_fondo_oscuro">
         <Header />
 
-            <main className='container mx-auto mb-32'>
+            <main className='container mx-auto p-5 md:p-0'>
 
                 < Outlet />
 

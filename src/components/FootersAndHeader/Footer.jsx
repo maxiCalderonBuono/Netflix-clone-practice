@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = ({bg_color}) => {
   return (
-    <footer className={`text-gray-500 ${bg_color} w-full flex justify-center pt-32 pb-20 `}>
+    <footer className={`text-gray-500 ${bg_color} w-full flex justify-center pt-32 pb-5 lg:pb-20 `}>
       <div className="md:w-1/2">
 
         <span>¿Preguntas? Llama al 0800 345 1593</span>

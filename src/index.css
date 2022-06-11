@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: 'Roboto', sans-serif;
+
+
+}
+
+
+
+.imagen_fondo_inicio{
+  background-image: url('./assets/hero_img.jpg');
+  background-position: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .imagen_fondo_inicio{
+    background-image: none;
+  }
+}
+
+.imagen_fondo_oscuro{
+  background-color: rgba(0, 0, 0, 0.617);
+  height: 100%;
+}
+
+
+.color_navBar{
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.bottom-info{
+  background-color: rgba(149, 149, 149, 0.586);
+}
+
+.nav_header{
+  background-color: rgba(0, 0, 0, 0.017);
+
+
+}
+
+.color_form_login{
+  background-color: rgba(0, 0, 0, 0.7);
+  
+}
+
+
+.movileModal{
+
+  z-index: 999;
+}
+
+
+
+
+
+
+
+

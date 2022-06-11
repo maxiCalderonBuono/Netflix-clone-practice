@@ -1,0 +1,168 @@
+.movies{
+    width: 325px;
+    height: 220px;
+    margin-right: 25px;
+    
+    overflow: hidden;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+
+    transition: all .4s ease-out  ;
+    transition-delay: 0.2s;
+}
+
+
+.divRelative{
+    position: relative;
+    width: 325px;
+    height: 220px;
+
+
+}
+
+
+.movies:hover{
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    top: -100px;
+    left: -20px;
+    background-color: rgb(9, 9, 9);
+    z-index: 999;
+
+    
+    -webkit-box-shadow: 1px 3px 33px 5px rgba(255,255,255,0.03); 
+    box-shadow: 1px 3px 33px 5px rgba(255,255,255,0.03);
+}
+
+@keyframes hove {
+
+  
+}
+
+.movies:hover img{
+    height: 190px;
+    width: 380px;
+
+   
+}
+
+.button_movies{
+    color: white;
+    margin-top: 20px;
+    border-radius: 50%;
+    font-size: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.719);
+    padding: 2px 8px;
+}
+.button_movie{
+    color: white;
+    margin-top: 20px;
+    border-radius: 50%;
+    font-size: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.719);
+    padding: 2px 8px;
+}
+
+
+
+
+
+/* VIDEO AND MOVIE HERO */
+
+
+
+.contain_video{
+  width: 100%;
+  position: relative;
+  top: 100;
+  height: 850px;
+} 
+
+.video_play{
+content: "";
+ width: 50%;
+ height: 50%;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    
+    .movies:hover img{
+        height: 100px;
+        width: 185px;
+    
+       
+    }
+
+    .movies{
+        width: 175px;
+        height: 120px;
+        margin-right: 0px;
+
+    }
+
+    .movies:hover{
+        width: 180px;
+        height: 100px;
+        position: block;
+        top: 0px;
+        left: 0px;
+        background-color: rgb(9, 9, 9);
+        
+        -webkit-box-shadow: 1px 3px 33px 5px rgba(255,255,255,0.03); 
+        box-shadow: 1px 3px 33px 5px rgba(255,255,255,0.03);
+    }
+
+    .divRelative{
+        width: 182px;
+        height: 100px;
+    }
+
+}
+
+@media (max-width: 414px) {
+    
+    .movies{
+        width: 165px;
+        height: 120px;
+        margin-right: 0px;
+
+    }
+
+    .divRelative{
+        width: 170px;
+        height: 120px;
+    }
+
+    .movies:hover{
+        width: 170px;
+        height: 100px;
+    }
+
+    .movies:hover img{
+        height: 100px;
+        width: 167px;
+    
+       
+    }
+
+}
+
+
+@media (max-width: 1250px) {
+    .contain_video{
+        width: 100%;
+        position: relative;
+        top: 100;
+        height: 650px;
+      } 
+}
+

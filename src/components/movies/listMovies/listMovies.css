@@ -1,0 +1,145 @@
+.list{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+
+}
+
+.listTitle{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 0;
+}
+
+.contain{
+    margin-left: 50px;
+    display: flex;
+    width: max-content;
+
+    margin-top: 10px;
+    transform: translateX(0px) ;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    
+}
+
+.wrapper{
+    position: relative;
+
+}
+
+.sliderArrow{
+    width: 30px;
+    height: 184px;
+    background-color: rgba(0, 0, 0, 0.543);
+    color: white;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    margin: auto;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.arrow_left{
+    left: 0;
+    
+    
+}
+.arrow_right{
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    align-items: center;
+    background: #E3E3E3;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+  } */
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  
+  .slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+  }
+  
+  .slider::before,
+  .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  
+  .slider .slide-track {
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: calc(350px * 24);
+  }
+  
+  .slider .slide {
+    height: 100px;
+    width: 250px;
+  }
+
+
+
+
+  @media (max-width: 768px) {
+    .contain, .listTitle{
+
+      margin-left: 10px;
+
+
+    }
+
+    .sliderArrow{
+
+      width: 20px;
+      height: 100px;
+    }
+  }

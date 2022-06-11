@@ -1,0 +1,28 @@
+.Inputs_label_Contact{
+    position: relative;
+  
+  }
+  
+  .label_contact {
+    position: absolute;
+    left: 1rem;
+    top: 1.2rem;
+    padding: 0 0.2rem;
+ 
+    cursor: text;
+    transition: top 200ms ease-in,
+    left 200ms ease-in,
+    font-size 200ms ease-in;
+  
+  }
+
+
+  .input_contact:focus ~ .label_contact,
+  .input_contact:not(:placeholder-shown).input_contact:not(:focus) ~ .label_contact
+  {
+    top: 0.3rem;
+    font-size: 0.8rem;
+    left: 0.3rem;
+  
+  
+  }

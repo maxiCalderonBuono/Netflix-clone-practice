@@ -9,7 +9,7 @@ const AuthLayout = () => {
       <div className="imagen_fondo_oscuro">
         <Header />
 
-            <main className='container mx-auto p-5 md:p-0'>
+            <main className='container mx-auto p-3 md:p-0'>
 
                 < Outlet />
 

@@ -14,7 +14,7 @@ const RestorePassword = () => {
 
   return (
 
-    <div className="mt-32 mb-48">
+    <div className="mt-14 mb-24 md:mt-32 md:mb-48">
         <div className="shadow-lg p-10 w-full md:w-1/2 lg:w-1/3 mx-auto bg-neutral-300">
 
 

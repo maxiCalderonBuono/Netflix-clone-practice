@@ -49,7 +49,7 @@ const ModalMovileMovie = ({movie, deleteList}) => {
 
   return (
 
-    <div className="fixed bottom-0 md:hidden w-full bg-stone-800  text-gray-50 movileModal">
+    <div className="fixed bottom-0 md:hidden w-full text-gray-50 movileModal">
 
 
     <div className="flex flex-col items-center">

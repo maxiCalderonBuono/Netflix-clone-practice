@@ -28,7 +28,7 @@ const Home = () => {
             
                 <ListMovies listTitle={'Mi Lista'}>
                     {myList.map(list => (
-                        <div key={list._id} className="mb-10">
+                        <div key={list._id} className="mb-1">
 
                             <Movies
                             movie={list}

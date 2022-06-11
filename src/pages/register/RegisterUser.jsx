@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import phone from '../../assets/telefonos.png'
-import cpu from '../../assets/Computadora.png'
-import cpu2 from '../../assets/Pantalla.png'
+import cpu from '../../assets/computadora.png'
+import cpu2 from '../../assets/pantalla.png'
 import Button from '../../components/button/Button'
 
 

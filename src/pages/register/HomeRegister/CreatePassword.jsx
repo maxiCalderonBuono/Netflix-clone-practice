@@ -1,12 +1,10 @@
 import { Formik } from 'formik'
 import React, { useEffect, useState } from 'react'
-import InputsBlancos from '../../../components/Inputs/InputsBlancos'
 
 import Button from '../../../components/button/Button'
 import { Link, useNavigate } from 'react-router-dom'
 import useAuth from '../../../hooks/useAuth'
 import axios from '../../../config/Axios'
-import Input from '../../../components/Inputs/Input'
 import InputForm from '../../../components/Inputs/InputsForm2/InputForm'
 import Alert from '../../../components/Alerts/Alert'
 import AlertLogin from '../../../components/Alerts/AlertLogin'

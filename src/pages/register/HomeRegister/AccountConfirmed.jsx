@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
-import AlertLogin from '../../../components/Alerts/AlertLogin'
 import axios from '../../../config/Axios'
 
-// import Alerta from '../../../components/Alerts/Alert'
 import useAuth from '../../../hooks/useAuth'
 
 

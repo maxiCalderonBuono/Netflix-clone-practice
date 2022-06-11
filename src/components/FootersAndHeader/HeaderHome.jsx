@@ -52,7 +52,7 @@ const Header_Principal = () => {
                     <Link className="hidden md:block" to="/browse"><img src={Logo} alt="" width={120}/></Link>
                     <Link className="block md:hidden" to="/browse"><img src={LogoMovile} alt="" width={50}/></Link>
     
-                      <Link to="/browse" className="hidden md:block"><p>Inicio</p></Link>
+                      <Link to="/browse" className=""><p>Inicio</p></Link>
                       <Link to="/browse/series"><p>Series</p></Link>
                       <Link to="/browse/movies"><p>Peliculas</p></Link>
                       <Link className="hidden md:block" to="#"><p>Novedades populares</p></Link>

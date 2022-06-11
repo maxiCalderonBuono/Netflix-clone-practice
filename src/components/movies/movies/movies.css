@@ -87,6 +87,17 @@ content: "";
 }
 
 
+.button_muted_video{
+    position: relative;
+    top: 95%;
+    left: 90%;
+    cursor: pointer;
+}
+
+.button_muted_video:hover{
+    color: rgb(180, 49, 49);
+}
+
 
 
 

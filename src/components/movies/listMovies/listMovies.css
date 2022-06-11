@@ -59,22 +59,6 @@
 
 
 
-
-
-
-
-
-
-
-
-/* body {
-    align-items: center;
-    background: #E3E3E3;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-  } */
-  
   @keyframes scroll {
     0% {
       transform: translateX(0);
@@ -143,3 +127,14 @@
       height: 100px;
     }
   }
+
+
+
+@media (max-width: 414px) {
+    
+  .sliderArrow{
+
+    width: 20px;
+    height: 93px;
+  }
+}

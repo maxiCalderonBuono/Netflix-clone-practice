@@ -59,20 +59,20 @@ const ModalMovileMovie = ({movie, deleteList}) => {
             <div className="text-xs">
             
                 <div className="flex justify-between ">
-                    <h3 className="text-lg uppercase font-bold">{movie.name}</h3>
+                    <h3 className=" text-base capitalize font-bold">{movie.name}</h3>
                     <button className="buttonsModalAlternative" onClick={() => viewMovieMovile({}, false)}>X</button>
                 </div>
                 
-                <div className="flex gap-4 text-stone-400">
+                <div className="flex gap-4 text-stone-400 my-1">
                     <p>2022</p>
                     <p> 16+ </p>
                     {movie.type === 'pelicula' ? <p>2 h 1 min</p> : <p>4 Temporadas</p>}
                 </div>
 
-                <p className="text-xs">
+                <p className="text-xs mt-1">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, similique!
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, similique!
-                    </p>
+                </p>
 
             </div>
 

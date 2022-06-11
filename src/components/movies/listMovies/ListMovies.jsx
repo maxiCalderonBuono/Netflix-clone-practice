@@ -77,6 +77,7 @@ const ListMovies = ({movies, listTitle, nameMovie, idMovies, children}) => {
           setSlideNumber(slideNumber - 1)
           movieRef.current.style.transform = `translateX(${205 + distance}px)`
         }
+        
         if(direction === 'right'){
           setSlideNumber(slideNumber + 1)
   
@@ -84,11 +85,11 @@ const ListMovies = ({movies, listTitle, nameMovie, idMovies, children}) => {
   
         }
   
-        if(direction === 'right' && slideNumber === 11){
+        if(direction === 'right' && slideNumber === 10){
   
-            setSlideNumber(slideNumber - 11)
+            setSlideNumber(slideNumber - 10)
   
-            movieRef.current.style.transform = `translateX(${2255 + distance}px)`
+            movieRef.current.style.transform = `translateX(${2050 + distance}px)`
             
             setIsMoved(false)
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlay,faCircleInfo } from '@fortawesome/free-solid-svg-icons'
+import { faPlay,faCircleInfo, faVolumeXmark, faVolumeHigh } from '@fortawesome/free-solid-svg-icons'
 import ReactPlayer from 'react-player'
 import N from '../../assets/N.png'
 
@@ -35,14 +35,12 @@ const HeroHeaderMovie = ({video, img, type, movieName}) => {
         setTimeout(() => {
 
             setPlay(true)
-            setmute(false)
-
 
             Refvideo.current.classList.add( 'z-30')
 
             refContainVideo.current.classList.add( 'z-20')
             
-        }, 4500)
+        }, 6500)
 
     }
     
@@ -56,11 +54,9 @@ const HeroHeaderMovie = ({video, img, type, movieName}) => {
         Refvideo.current.classList.remove( 'z-30')
         refContainVideo.current.classList.remove( 'z-20')
 
-
-            
     }
-    
 
+    
 
   return (
 
@@ -69,7 +65,7 @@ const HeroHeaderMovie = ({video, img, type, movieName}) => {
       
             {!isMobile ?
             <> 
-                <div className="contain_video brightness-75" ref={refContainVideo} >
+            <div className="contain_video flex brightness-75" ref={refContainVideo} >
                
                 <div className="absolute top-0" ref={Refvideo} >
                         <ReactPlayer url={video} 
@@ -87,32 +83,51 @@ const HeroHeaderMovie = ({video, img, type, movieName}) => {
 
                 </div>
 
-                <div className="absolute bottom-1/3 left-20 text-white">
-                <div className="flex">
-                    <img src={N} width={30} alt="" />
-                    <p className="text-2xl tracking-widest"> {type}</p>
-                </div>
+                    <div className="absolute bottom-1/3 left-20 text-white">
+                        <div className="flex">
+                            <img src={N} width={30} alt="" />
+                            <p className="text-2xl tracking-widest"> {type}</p>
+                        </div>
 
-                    <h2 className="text-7xl font-bold ml-1">{movieName}</h2>
+                            <h2 className="text-7xl font-bold ml-1">{movieName}</h2>
 
-                <div className="mt-10 flex gap-3">
+                        <div className="mt-10 flex gap-3">
 
-                    <button className="p-3 bg-gray-200 text-gray-800 rounded-sm font-medium">
-                        <FontAwesomeIcon icon={faPlay} onClick={() => {
-                            setPlay(true)
-                            setmute(false)
+                            <button className="p-3 bg-gray-200 text-gray-800 rounded-sm font-medium">
+                                <FontAwesomeIcon icon={faPlay} onClick={() => {
+                                    setPlay(true)
+                                    setmute(false)
+                                }
+                                    }/> Reproducir
+                            </button>
+
+                            <button className="p-3 bottom-info text-gray-200 rounded-sm font-medium">
+                                <FontAwesomeIcon icon={faCircleInfo}/> Más información
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <div className="z-50 button_muted_video">
+                        {mute ? <FontAwesomeIcon 
+                        className="text-4xl text-gray-100 hover:text-5xl hover:text-white hover:transition duration-300 hover:ease-in-out"
+                            icon={faVolumeXmark} onClick={() => setmute(false)}
+                            
+                        /> 
+                        
+                        
+                        : 
+
+                            <FontAwesomeIcon 
+                            className="text-4xl text-gray-100 hover:text-5xl hover:text-white hover:transition duration-300 hover:ease-in-out" 
+                            icon={faVolumeHigh} 
+                            onClick={() => setmute(true)} />
+                    
                         }
-                            }/> Reproducir
-                    </button>
+                        
+                    </div>
+            </div>
 
-                    <button className="p-3 bottom-info text-gray-200 rounded-sm font-medium">
-                        <FontAwesomeIcon icon={faCircleInfo}/> Más información
-                    </button>
-
-                </div>
-
-                </div>
-                </div>
             </>
            
             :

@@ -15,7 +15,7 @@ const RestorePassword = () => {
   return (
 
     <div className="mt-32 mb-48">
-        <div className="shadow-lg p-10 w-1/3 mx-auto bg-neutral-300">
+        <div className="shadow-lg p-10 w-full md:w-1/2 lg:w-1/3 mx-auto bg-neutral-300">
 
 
                 <h2 className="text-3xl mb-2">Olvidaste tu contraseña</h2>
@@ -57,9 +57,6 @@ const RestorePassword = () => {
                         <div className="flex flex-col gap-2">
 
                             <InputsBlancos
-                            error={errors.email}
-                            label={"Email"}
-
                             type='email'
                             name="email"
                             onChange={handleChange}

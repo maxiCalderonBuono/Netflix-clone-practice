@@ -22,7 +22,7 @@ const Login = () => {
 
                 <div className="mx-auto flex justify-center">
 
-                    <div className="md:px-16 lg:pb-40 lg:w-1/3 pt-14 color_form_login">
+                    <div className="md:px-16 lg:pb-10 lg:w-1/3 pt-14 color_form_login">
                         <h2 className="text-3xl font-bold text-gray-100 mb-10">Inicio de sesión</h2>
                         <Formik
                         initialValues={{

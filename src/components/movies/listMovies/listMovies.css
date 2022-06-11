@@ -125,6 +125,8 @@
 
       width: 20px;
       height: 100px;
+      padding: 0 4px;
+
     }
   }
 
@@ -134,7 +136,8 @@
     
   .sliderArrow{
 
-    width: 20px;
+    width: 23px;
     height: 93px;
+    padding: 0 4.5px;
   }
 }

@@ -26,7 +26,7 @@ const Register = () => {
         <div className=" text-white">
 
 
-            <div className="text-center flex flex-col md:w-2/3 gap-4 mx-auto pt-20 md:pt-40">
+            <div className="text-center flex flex-col md:w-2/3 gap-4 mx-auto pt-5 md:pt-40">
                 <h2 className="text-5xl lg:text-7xl font-bold">Películas y series ilimitadas y mucho más.</h2>
                 <p className="text-2xl font-semibold"> Disfruta donde quieras. Cancela cuando quieras.</p>
                 <p className="text-xl"> ¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>

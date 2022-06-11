@@ -175,15 +175,17 @@ const AddProfile = () => {
 
                 <div className="flex justify-center gap-5 mt-10 p-2 bg-gray-200 relative">
                   
-                   <Button 
+                   <button 
                     type = 'submit' 
-                    texto={ !loading ? 'Continuar' : <div className="p-3"> <Spinner/></div>}
-                    clases={'w-full text-2xl bg-gray-200 text-black'}
+                    className="'w-full text-2xl font-bold p-2 text-black'"
 
-                    /> 
+                    > { !loading ? 'Continuar' : <div className="p-4"> <Spinner/></div>} 
+                    
+                    </button>
 
 
-                </div>
+                  </div>
+
               </form>
             )}
         </Formik>

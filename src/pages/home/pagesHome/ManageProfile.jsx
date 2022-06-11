@@ -188,13 +188,13 @@ const ManageProfile = () => {
                         <div className="flex gap-5 mt-10 lg:w-1/2">
                         
                         
+           
+                          <button 
+                            type = 'submit' 
+                            className="text-2xl rounded-md bg-gray-200 font-bold text-black w-full p-4"
+                            > { !loading ? 'Guardar' : <div className="relative bg-gray-200 rounded-sm"><Spinner/></div>} 
                           
-                          <Button 
-                              type = 'submit' 
-                              texto={!loading ? 'Guardar' : <div className="relative bg-gray-200 rounded-sm"><Spinner/></div>}
-                              clases={'w-full p-4 text-2xl bg-gray-200 text-black'}
-  
-                              />
+                          </button>
 
                       
                           <Link to='/browse ' className="w-full text-2xl border-2 rounded-md">

@@ -60,8 +60,6 @@ const RestorePassword = () => {
                             error={errors.email}
                             label={"Email"}
 
-                            htmlFor={'email'}
-
                             type='email'
                             name="email"
                             onChange={handleChange}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Formik } from 'formik'
-import InputsBlancos from '../../../components/Inputs/InputsBlancos'
+import InputsWhite from '../../../components/Inputs/InputsWhite'
 import Button from '../../../components/button/Button'
 import useAuth from '../../../hooks/useAuth'
 import AlertLogin from '../../../components/Alerts/AlertLogin'
@@ -55,7 +55,7 @@ const RequestChangeEmail = () => {
 
 
                         <div className="flex w-full flex-col mb-5 gap-1">
-                            <InputsBlancos 
+                            <InputsWhite 
                                 type={'email'} 
                                 value={values.email} 
                                 placeholder={'Introduce tu email actual'}

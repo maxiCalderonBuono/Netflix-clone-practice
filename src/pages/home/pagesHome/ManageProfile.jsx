@@ -1,7 +1,7 @@
 import { Formik } from 'formik'
 import '../../../components/Inputs/Input_img.css'
 import React, {useRef, useState, useEffect} from 'react'
-import InputsBlancos from '../../../components/Inputs/InputsBlancos'
+import InputsWhite from '../../../components/Inputs/InputsWhite'
 import Button from '../../../components/button/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPen } from '@fortawesome/free-solid-svg-icons'
@@ -161,7 +161,7 @@ const ManageProfile = () => {
 
                             <div className="flex flex-col gap-2 w-full">
 
-                              <InputsBlancos
+                              <InputsWhite
                                   placeholder={'nombre'}
                                   type='text'
                                   name="profile_name"

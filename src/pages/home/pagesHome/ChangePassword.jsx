@@ -1,7 +1,7 @@
 import { Formik } from 'formik'
 import React, { useState } from 'react'
 import ButtonAccount from '../../../components/button/ButtonAccount'
-import InputsBlancos from '../../../components/Inputs/InputsBlancos'
+import InputsWhite from '../../../components/Inputs/InputsWhite'
 import useAuth from '../../../hooks/useAuth'
 import Alert from '../../../components/Alerts/Alert'
 import AlertLogin from '../../../components/Alerts/AlertLogin'
@@ -83,7 +83,7 @@ const ChangePassword = () => {
 
                               <div className="flex flex-col">
                                 {errors.current_pass && touched.current_pass && (<Alert error ={errors.current_pass}/>)}
-                                <InputsBlancos
+                                <InputsWhite
                                 type={'password'} 
                                 value={values.current_pass} 
                                 placeholder={'tu contraseña actual'}
@@ -96,7 +96,7 @@ const ChangePassword = () => {
 
                               <div className="flex flex-col">
                                 {errors.new_pass && touched.new_pass && (<Alert error ={errors.new_pass}/>)}
-                                <InputsBlancos
+                                <InputsWhite
                                 type={'password'} 
                                 value={values.new_pass} 
                                 placeholder={'Contraseña nueva (6-60 caracteres)'}
@@ -112,7 +112,7 @@ const ChangePassword = () => {
 
                               <div className="flex flex-col">
                                 {errors.password2 && touched.password2 && (<Alert error ={errors.password2}/>)}
-                                <InputsBlancos
+                                <InputsWhite
                                 type={'password'} 
                                 value={values.password2} 
                                 placeholder={'Confirmar contraseña nueva'}

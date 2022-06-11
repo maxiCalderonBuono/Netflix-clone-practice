@@ -2,7 +2,7 @@ import { Formik } from 'formik'
 import React, {useRef, useState, useEffect} from 'react'
 import '../../components/Inputs/Input_img.css'
 import Header from '../../components/FootersAndHeader/HeaderAddProfile'
-import InputsBlancos from '../../components/Inputs/InputsBlancos'
+import InputsWhite from '../../components/Inputs/InputsWhite'
 import Button from '../../components/button/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPen} from '@fortawesome/free-solid-svg-icons'
@@ -150,7 +150,7 @@ const AddProfile = () => {
                     
                   
                   <div className='flex flex-col lg:mt-0 mt-5 gap-2 w-full'>
-                    <InputsBlancos
+                    <InputsWhite
                       placeholder={'nombre'}
                       type='text'
                       name="profile_name"

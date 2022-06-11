@@ -1,7 +1,7 @@
 import React from 'react'
 import './Input.css'
 
-const inputsBlancos = ({type, value, onChange, onBlur, name, placeholder, clases}) => {
+const InputsWhite = ({type, value, onChange, onBlur, name, placeholder, clases}) => {
   return (
 
     <input 
@@ -20,4 +20,4 @@ const inputsBlancos = ({type, value, onChange, onBlur, name, placeholder, clases
   )
 }
 
-export default inputsBlancos
+export default InputsWhite

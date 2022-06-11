@@ -4,7 +4,6 @@ import Button from '../../../components/button/Button'
 import ButtonPlan from '../../../components/button/ButtonPlan'
 import Table from '../../../components/Table/Table'
 import Check from '../../../assets/check.svg'
-import useAuth from '../../../hooks/useAuth'
 
 const SelectPlan = () => {
  

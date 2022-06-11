@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import axios from '../../../config/Axios'
 import { Formik } from 'formik'
-import InputsBlancos from '../../../components/Inputs/InputsBlancos'
+import InputsWhite from '../../../components/Inputs/InputsWhite'
 import Button from '../../../components/button/Button'
 import useAuth from '../../../hooks/useAuth'
 import AlertLogin from '../../../components/Alerts/AlertLogin'
@@ -120,7 +120,7 @@ const ChangeEmail = () => {
                       {errors.general ? (<AlertLogin text={errors.general} error={true}/>) : alert.msg && (<AlertLogin text={ alert.msg} error={alert.error}/>)}
                       
 
-                        <InputsBlancos 
+                        <InputsWhite 
                             type={'email'} 
                             value={values.email} 
                             placeholder={'Introduce el nuevo email'}
@@ -131,7 +131,7 @@ const ChangeEmail = () => {
 
                         />
 
-                        <InputsBlancos 
+                        <InputsWhite 
                             type={'email'} 
                             value={values.emailRepeat} 
                             placeholder={'Repite el email'}

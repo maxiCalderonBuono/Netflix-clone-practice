@@ -2,7 +2,7 @@ import { Formik } from 'formik'
 import React, { useState } from 'react'
 import Alert from '../../components/Alerts/Alert'
 import ButtonAccount from '../../components/button/ButtonAccount'
-import InputsBlancos from '../../components/Inputs/InputsBlancos'
+// import InputsWhite from '../../components/Inputs/InputsWhite'
 import AlertLogin from '../../components/Alerts/AlertLogin'
 import useAuth from '../../hooks/useAuth'
 
@@ -56,7 +56,7 @@ const RestorePassword = () => {
                         
                         <div className="flex flex-col gap-2">
 
-                            <InputsBlancos
+                            {/* <InputsWhite
                             type='email'
                             name="email"
                             onChange={handleChange}
@@ -64,11 +64,13 @@ const RestorePassword = () => {
                             onBlur={handleBlur}
                             placeholder={'nombre@ejemplo.com'}
                             clases='border border-gray-500'
-                            />
+                            /> */}
 
                             {errors.email && <Alert error={errors.email}/>}
 
                         </div>
+
+                        
 
 
                         <ButtonAccount

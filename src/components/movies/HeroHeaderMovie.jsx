@@ -40,7 +40,7 @@ const HeroHeaderMovie = ({video, img, type, movieName}) => {
 
             refContainVideo.current.classList.add( 'z-20')
             
-        }, 6500)
+        }, 2500)
 
     }
     

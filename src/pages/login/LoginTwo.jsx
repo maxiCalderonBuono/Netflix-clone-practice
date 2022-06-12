@@ -47,12 +47,8 @@ const LoginTwo = () => {
 
                             const password = `${import.meta.env.VITE_PASSWORD}`
 
-                            console.log(password)
-                            
                             const valuesLogin = {email, password}
                             
-                            console.log(valuesLogin)
-
                             try {
       
                                 const {data} = await axios.post('/login', valuesLogin)

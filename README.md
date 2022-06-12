@@ -1,5 +1,14 @@
 
 
+# Netflix Clone Frontend
+
+## 🚀 About this proyect
+Hello👋, I want to present you an application that I made with react, tailwind, nodejs and express. It's a clone of Netflix, the application is in Spanish, I regret having made it in Spanish, but that's how I started it and it was too late to change it to English.
+
+The images and the name of the movies are taken from Netflix itself so that it has a little more "realism". I didn't like movie APIs so I decided to make my own API.
+What could be added is a description of the movies, but I'll leave that for later with the possible improvements I make.
+
+
 
 **The technologies used 🛠:**
 

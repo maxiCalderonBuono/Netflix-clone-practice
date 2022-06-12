@@ -106,7 +106,7 @@ const NewPassword = () => {
       
                       {({handleSubmit, handleChange, values, touched, errors, handleBlur}) => (
       
-                          <form action="" onSubmit={handleSubmit} className="w-1/2 mx-auto mt-10 flex flex-col gap-2">
+                          <form action="" onSubmit={handleSubmit} className="lg:w-1/2 mx-auto mt-10 flex flex-col gap-2">
                               {alert.msg && (<AlertLogin error={alert.error} text={alert.msg}/>)}
                               
                               <div className=" w-full flex flex-col gap-14">

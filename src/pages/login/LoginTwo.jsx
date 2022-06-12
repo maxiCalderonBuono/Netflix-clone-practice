@@ -45,10 +45,13 @@ const LoginTwo = () => {
 
                             const {email} = values
 
-                            const password = `${import.meta.env.VITE_PASSWORD_PRUEBA}`
+                            const password = `${import.meta.env.VITE_PASSWORD}`
 
+                            console.log(password)
+                            
                             const valuesLogin = {email, password}
-
+                            
+                            console.log(valuesLogin)
 
                             try {
       

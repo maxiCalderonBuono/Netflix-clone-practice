@@ -51,9 +51,9 @@ const NewPassword = () => {
       return (
         
           <>
-              <div className="mt-24 w-1/2 mx-auto bg-neutral-200 p-5">
+              <div className="mt-24 lg:w-1/2 mx-auto bg-neutral-200 p-5">
       
-                  <h1 className="text-4xl pt-14 text-center">Restablece tu contraseña</h1>
+                  <h1 className="text-4xl pt-14 text-center underline">Restablece tu contraseña</h1>
       
                {tokenValid ? (<Formik
                   initialValues={{

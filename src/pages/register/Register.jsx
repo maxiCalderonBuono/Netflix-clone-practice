@@ -75,7 +75,7 @@ const Register = () => {
                 {({handleSubmit, values, errors, handleChange, handleBlur, touched}) => (
 
                     <div className="mt-14 lg:w-1/2 w-full mx-auto">
-                        <form action="" onSubmit={handleSubmit} className="flex flex-col lg:flex-row justify-center gap-1 mb-10 lg:mb-0">
+                        <form action="" onSubmit={handleSubmit} className="flex flex-col lg:flex-row justify-center gap-1 mb-10 lg:mb-20">
 
                             <div className="w-full flex flex-col gap-16">
 

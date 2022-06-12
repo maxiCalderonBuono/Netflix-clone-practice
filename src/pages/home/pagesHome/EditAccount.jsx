@@ -1,9 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Tarjeta from '../../../assets/visa_tarjeta.png'
+import useAuth from '../../../hooks/useAuth'
 
 
 const EditAccount = () => {
+
+    const {Auth} = useAuth()
+
+
   return (
     <>
         <div className="relative top-32 text-black lg:w-2/4 lg:mx-auto p-5 lg:p-0 ">
@@ -24,8 +29,7 @@ const EditAccount = () => {
                     <div className="flex flex-col lg:flex-row gap-2 lg:gap-0 lg:justify-between mb-2">
 
                         <div>
-
-                            <p>tomasaranda17@gmail.com</p>
+                            <p>{Auth.email}</p>
                             <p>Contraseña: ********* </p>
                             <p>Telefono: </p>
                         </div>

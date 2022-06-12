@@ -15,7 +15,7 @@ const RequestChangeEmail = () => {
     const {RequestChangeEmail} = useAuth()
 
   return (
-    <div className="lg:w-1/4 p-5 mx-auto pt-52">
+    <div className="lg:w-1/4 p-5 mx-auto pt-52 lg:pb-32">
 
         <div className="text-center mb-10">
             <h1 className="text-3xl uppercase mb-2">solicitar cambiar email</h1>
@@ -38,18 +38,15 @@ const RequestChangeEmail = () => {
             return errors
         }}
 
-        onSubmit={async ({email}, {resetForm}) => {
+        onSubmit={async ({email}) => {
 
+            
             const response = await RequestChangeEmail(email)
 
             setAlert(response)
-
-            resetForm()
-
+ 
         }}
-
         >
-
             {({handleSubmit, handleChange, handleBlur, errors, values}) => (
 
                 <form action="" onSubmit={handleSubmit} className="flex flex-col justify-center gap-3 text-xl">

@@ -56,7 +56,7 @@ export const AuthProvider = ({children}) => {
             try {
 
                 const {data} = await axios('/users', getToken())
-                
+
                 setAuth(data)
                 
             } catch (error) {

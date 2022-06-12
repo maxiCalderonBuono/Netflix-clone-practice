@@ -42,6 +42,7 @@ import SeriesPages from './pages/home/pagesHome/pages/SeriesPages'
 
 import AddProfile from './pages/sesion/AddProfile'
 import MoviesPages from './pages/home/pagesHome/pages/MoviesPages'
+import LoginTwo from './pages/login/LoginTwo'
 
 
 
@@ -60,6 +61,8 @@ function App() {
           {/* This is public area */}
           <Route index element={<Login />} /> 
           
+          <Route path="login-without-registration" element={< LoginTwo />} />
+
           <Route path="signup-user" element={< Register />} />
           <Route path="change-email/:token" element={< ChangeEmail />} />
           

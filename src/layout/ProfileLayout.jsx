@@ -31,7 +31,7 @@ const ProfileLayout = () => {
             ): <Navigate to="/" />
 
             }
-                  <div className="bg-neutral-900">
+                  <div className="bg-neutral-900 p-2">
                         <Footer />
                   </div>
           </>

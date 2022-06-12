@@ -2,7 +2,7 @@
     background: #44403c;
     font-size: 14px;
     border-radius: 100%;
-    padding: 12px 2px;
+    padding: 12px 1px;
 
 }
 
@@ -13,9 +13,10 @@
 
 .buttonsModalAlternative{
     background: #44403c;
-    font-size: 20px;
+    font-size: 21px;
     border-radius: 100%;
-    padding: 4px 6px;
+    padding: 6px;
+    
 
 }
 

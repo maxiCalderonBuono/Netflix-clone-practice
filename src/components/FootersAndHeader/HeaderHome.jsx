@@ -48,14 +48,14 @@ const Header_Principal = () => {
       <>
       <header className="relative top-0 bg-white w-full" >
               <nav className="fixed w-full top-0 p-2 flex md:p-0 items-center text-white justify-between nav_header md:px-20 z-30" ref={ref_Header}>
-                  <div className="flex items-center gap-4 text-sm">
+                  <div className="flex items-center gap-2 text-xs sm:gap-4 sm:text-sm">
                     <Link className="hidden md:block" to="/browse"><img src={Logo} alt="" width={120}/></Link>
                     <Link className="block md:hidden" to="/browse"><img src={LogoMovile} alt="" width={50}/></Link>
     
                       <Link to="/browse" className=""><p>Inicio</p></Link>
                       <Link to="/browse/series"><p>Series</p></Link>
                       <Link to="/browse/movies"><p>Peliculas</p></Link>
-                      <Link className="hidden md:block" to="#"><p>Novedades populares</p></Link>
+                      <Link className="hidden lg:block" to="#"><p>Novedades populares</p></Link>
                       <a href="/browse/my-list"><p>Mi lista</p></a>
 
                   </div>

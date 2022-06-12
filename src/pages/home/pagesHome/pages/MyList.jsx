@@ -15,11 +15,11 @@ const MyList = () => {
     <>
         <div className="p-3 md:p-14 md:px-16">
             <div className="md:mb-56 mb-40">
-                <h1 className="text-white text-4xl mt-24 md:mt-16">Mi lista</h1>
+                <h1 className="text-white text-4xl mt-28 md:mt-16">Mi lista</h1>
 
-                {myList.length > 0 ? <div className="grid grid-cols-2 md:flex md:flex-wrap md:gap-3 mt-5 md:mt-20">
+                {myList.length > 0 ? <div className="grid grid-cols-2 md:flex md:flex-wrap md:gap-3 mt-8 md:mt-20">
                 {myList.map(list => (
-                    <div key={list._id} className="mb-10">
+                    <div key={list._id} className="mb-5">
 
                         <Movies
                         movie={list}

@@ -167,6 +167,31 @@ content: "";
 
 }
 
+@media (max-width: 360px) {
+
+    .movies{
+        width: 145px;
+        height: 105px;
+    }
+
+    .divRelative{
+        width: 160px;
+        height: 90px;
+    }
+
+    .movies:hover{
+        width: 150px;
+        height: 90px;
+    }
+
+    .movies:hover img{
+        height: 90px;
+        width: 150px;
+    
+       
+    }
+}
+
 
 @media (max-width: 1250px) {
     .contain_video{

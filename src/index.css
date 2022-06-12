@@ -21,11 +21,6 @@ body {
   height: 100%;
 }
 
-/* @media (max-width: 768px) {
-  .imagen_fondo_inicio{
-    background-image: none;
-  }
-} */
 
 .imagen_fondo_oscuro{
   background-color: rgba(0, 0, 0, 0.617);

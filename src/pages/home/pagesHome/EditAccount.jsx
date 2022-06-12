@@ -2,11 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Tarjeta from '../../../assets/visa_tarjeta.png'
 import useAuth from '../../../hooks/useAuth'
+import '../../../components/Inputs/Input_img.css'
+
 
 
 const EditAccount = () => {
 
-    const {Auth} = useAuth()
+    const {Auth, profile} = useAuth()
+
+    console.log(profile)
 
 
   return (
@@ -73,19 +77,19 @@ const EditAccount = () => {
             </div>
         <hr />
         
-            <div className="grid grid-cols-4 lg:mt-5 my-6">
+            <div className="grid md:grid-cols-4 lg:mt-5 my-6">
                 <div>
                     <h3>INFORMACIÓN DEL PLAN</h3>
                 </div>
 
                 <div className=" col-span-3">
                     <div className="flex justify-between lg:mb-2">
-                        <div className="flex gap-2 items-center font-bold ">
+                        <div className="flex gap-2 items-center font-bold mt-2">
                             <p>Estándar</p>
                             <p className="border p-1 border-black">HD</p>
                         </div>
 
-                        <div className="flex flex-col text-blue-500 font-semibold lg:text-right">
+                        <div className="flex flex-col text-blue-500 font-semibold lg:text-right mt-2">
                             <Link to="#">Cambiar de plan </Link>
 
                         </div>
@@ -94,7 +98,7 @@ const EditAccount = () => {
             </div>
         <hr />
 
-            <div className="grid grid-cols-4 lg:mt-5 my-6">
+            <div className="grid md:grid-cols-4 lg:mt-5 my-6">
                 <div>
                     <h3>PERFILES Y CONTROLES PARENTALES</h3>
                 </div>
@@ -103,10 +107,17 @@ const EditAccount = () => {
                     <div className="flex justify-between mb-2">
 
                         <div className="flex gap-2 items-center font-bold ">
-                            <p>Estándar</p>
-                            <p className="border p-1 border-black">HD</p>
-                        </div>
+                            {profile.map(prof => (
+                                <div className="flex flex-col items-center mt-5 gap-2 w-2/3 text-center" key={prof._id}>
+                                    <div className="profile_account ">
 
+                                        {prof.img?.url ? <img src={prof.img.url} alt="image profile" className="object-cover" />  :  <img src={`https://res.cloudinary.com/dj1pp4ivb/image/upload/v1652731468/netflix/awikvbbuxpbgaz0ebkho.png`} alt="image profile" />}
+                                    </div>
+                                    <p>{prof.profile_name}</p>
+                                </div>
+
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,7 +128,7 @@ const EditAccount = () => {
                     <h3>CONFIGURACIÓN</h3>
                 </div>
 
-                <div className="col-span-3 mt-5 lg:mt-0">
+                <div className="col-span-3 mt-5 mb-5 lg:mb-20 lg:mt-0">
 
                     <div className="flex flex-col gap-1 lg:gap-0 mb-3 text-blue-500 font-semibold">
                         <Link to="#">Participación en pruebas </Link>
